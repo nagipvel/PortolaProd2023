@@ -1,0 +1,27 @@
+<h4>Dear {{ first_name }},</h4>
+
+{% if MFR %}
+<p>Your account registration is confirmed with the user name {{ user_name }}.
+    Follow the link below to start
+    reviewing your test reports and promoting your brand to PVEL’s network
+    of Downstream Partners. Our partners use PVEL test reports to build their
+    approved vendor lists and make procurement decisions.</p>
+
+{% else %}
+<p>Your account registration is confirmed with the user name {{ user_name }}.
+    Follow the link below to access PVEL
+    test reports. We’re adding new reports regularly, so be sure to bookmark the
+    PVEL portal login page.</p>
+
+{% endif %}
+
+<p><a href="{{ magic_link }}">Click here</a> to log in. The PVEL Portal is
+    supported on Google Chrome, Microsoft Edge, and Mozilla Firefox. Other
+    browsers may not work as expected.</p>
+
+Best regards,<br>
+<br>
+The PVEL Portal Team<br>
+<br>
+Questions? Reply to this email for support.<br>
+For the latest news from PV Evolution Labs (PVEL), <a href="https://www.pvel.com/">visit us online</a>.

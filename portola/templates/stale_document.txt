@@ -1,0 +1,11 @@
+Hello {{ username }} -
+
+This message is intended to be read on an HTML capable email client. If you are
+not seeing this message rendered properly, please contact portal@pvel.com.
+
+Best regards,
+
+The PVEL Portal Team
+
+Questions? Reply to this email for support.
+For the latest news from PV Evolution Labs (PVEL), visit us online: https://www.pvel.com/

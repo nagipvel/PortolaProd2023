@@ -1,0 +1,35 @@
+<h4>Dear {{ first_name }},</h4>
+<p>One or more of your report requests have been processed by the responsible manufacturer.
+For additional clarification regarding a rejection, we recommend contacting the manufacturer directly. </p>
+
+<p><a href="https://portal.pvel.com/">Click here</a> to log in and view all report requests.</p>
+
+<table cellspacing="0" cellpadding="4" border="0" style="border:1px solid black;">
+    <TR>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Company</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Status</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Approver Comments</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Report Name</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Request Date</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Report Type</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Technology Tags</TH>
+    </TR>
+{% for item in items %}
+    <TR>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.entity}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.status}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.comment}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.title}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.date}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.type}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.tags}}</TD>
+    </TR>
+{% endfor %}
+</table>
+<br>
+Best regards,<br>
+<br>
+The PVEL Portal Team<br>
+<br>
+Questions? Reply to this email for support.<br>
+For the latest news from PV Evolution Labs (PVEL), <a href="https://www.pvel.com/">visit us online</a>.

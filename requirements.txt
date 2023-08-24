@@ -1,0 +1,23 @@
+# Copied from requirements/base.txt
+cryptography==2.9.2
+djangorestframework==3.9.4
+djangorestframework-jwt==1.11.0
+drf-extensions==0.5.0
+django==2.2.7
+django-filter==2.2.0
+django-cors-headers==3.1.0
+djangorestframework-filters==1.0.0.dev0
+coreapi==2.3.3
+pyyaml==5.1
+boxsdk
+boxsdk[jwt]
+#drf-tracking==1.5.0
+git+https://github.com/drdreff/drf-tracking.git@master
+pytz==2019.1 # for drf-tracking
+openpyxl==3.0.7
+pvlib
+pvlib[optional]
+psycopg2-binary==2.8.3 # From Azure
+sqlparse==0.3.0 # for drf-tracking
+whitenoise==4.1 # From Azure
+pandas==1.3.0

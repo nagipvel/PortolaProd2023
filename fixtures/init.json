@@ -1,0 +1,154 @@
+[
+{
+    "model": "portola.profile",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+},
+{
+    "model": "portola.profile",
+    "pk": 2,
+    "fields": {
+        "user": 2,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+},
+{
+    "model": "portola.profile",
+    "pk": 3,
+    "fields": {
+        "user": 3,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+},
+{
+    "model": "portola.profile",
+    "pk": 4,
+    "fields": {
+        "user": 4,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+},
+{
+    "model": "portola.profile",
+    "pk": 5,
+    "fields": {
+        "user": 5,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+},
+{
+    "model": "portola.profile",
+    "pk": 6,
+    "fields": {
+        "user": 6,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+},
+{
+    "model": "portola.profile",
+    "pk": 7,
+    "fields": {
+        "user": 7,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+},
+{
+    "model": "portola.profile",
+    "pk": 8,
+    "fields": {
+        "user": 8,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+},
+{
+    "model": "portola.profile",
+    "pk": 9,
+    "fields": {
+        "user": 9,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+},
+{
+    "model": "portola.profile",
+    "pk": 10,
+    "fields": {
+        "user": 10,
+        "entity": 1,
+        "bio": "",
+        "location": "",
+        "birth_date": null,
+        "box_user": ""
+    }
+}, {
+    "model": "portola.newsfeed",
+    "pk": 1,
+    "fields": {
+        "last_updated": "2020-03-26T22:43:25.183Z",
+        "last_updated_by": 1,
+        "created_by": 1,
+        "subject": "Welcome to the new PVEL Portal!",
+        "body": "We're excited for you to explore our new reports portal. It\u2019s designed for you to easily access PVEL reports and submit report requests to manufacturers.\r\nYou can search for available reports and make requests under the \"Find a Report\" tab. Review your outstanding requests and download available reports under the \"My Report Requests\" tab.\r\nBehind the scenes we are continuously working on new features. Have an idea or suggestion for improvement? Share your feedback with us at <portal@pvel.com>.",
+        "type": "PARTNER"
+    }
+}, {
+    "model": "portola.newsfeed",
+    "pk": 2,
+    "fields": {
+        "last_updated": "2020-03-26T22:43:59.640Z",
+        "last_updated_by": 1,
+        "created_by": 1,
+        "subject": "Welcome to the new PVEL Portal!",
+        "body": "We're excited for you to explore our new reports portal. It\u2019s designed for you to easily access PVEL reports and submit report requests to manufacturers.\r\nYou can search for available reports and make requests under the \"Find a Report\" tab. Review your outstanding requests and download available reports under the \"My Reports\" tab.\r\nHave an idea or suggestion for improvement? Share your feedback with us at <portal@pvel.com>",
+        "type": "CLIENT"
+    }
+}, {
+    "model": "portola.newsfeed",
+    "pk": 3,
+    "fields": {
+        "last_updated": "2020-03-26T22:44:08.788Z",
+        "last_updated_by": 1,
+        "created_by": 1,
+        "subject": "Welcome to the new PVEL Portal!",
+        "body": "We're excited for you to explore our new reports portal. It’s designed for manufacturers to easily access, review and approve PVEL reports for distribution to downstream companies.\r\nYou can find all of your company's PVEL reports under the My Reports tab. Review downstream company requests to view reports under the Report Requests tab.\r\nBehind the scenes we are continuously working on new features.  Have an idea or suggestion for improvement? Share your feedback with us at <portal@pvel.com>",
+        "type": "MANUFACTURER"
+    }
+}]

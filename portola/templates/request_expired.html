@@ -1,0 +1,32 @@
+<h4>Dear {{ first_name }},</h4>
+
+<p>We’re writing to share that one or more of your report requests has expired. If you’re still interested in this report,
+     please <a href="https://portal.pvel.com/">click here</a> to log in and submit a new request.</p>
+
+<table cellspacing="0" cellpadding="4" border="0" style="border:1px solid black;">
+    <TR>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Company</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Report Name</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Project No.</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Report Type</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Report Date</TH>
+        <TH style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">Technology Tags</TH>
+    </TR>
+{% for item in items %}
+    <TR>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.entity}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.title}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.project_number}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.document_type}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.issued_date}}</TD>
+        <TD align="left" style="color: #000000; font-size: 12px; line-height: 18px;border:1px solid black;">{{item.tags}}</TD>
+    </TR>
+{% endfor %}
+</table>
+<br>
+Best regards,<br>
+<br>
+The PVEL Portal Team<br>
+<br>
+Questions? Reply to this email for support.<br>
+For the latest news from PV Evolution Labs (PVEL), <a href="https://www.pvel.com/">visit us online</a>.
