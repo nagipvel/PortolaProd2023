@@ -6,15 +6,15 @@ from rest_framework.schemas import get_schema_view
 # from django.contrib import admin
 from django.urls import path
 from django.conf import settings
-from django.conf.urls import url
+from django.urls import re_path as url
 from rest_framework import serializers
 
 schema_view = get_schema_view(title='Pastebin API')
 
 # Create a router and register our viewsets with it.
 router = DefaultRouter()
-router.register(r'whoami',views.WhoAmIViewSet, base_name='whoami')
-router.register(r'bootstrap', views.BootstrapViewSet, base_name='bootstrap')
+router.register(r'whoami',views.WhoAmIViewSet, basename='whoami')
+router.register(r'bootstrap', views.BootstrapViewSet, basename='bootstrap')
 router.register(r'companies', views.CompanyViewSet)
 router.register(r'documents', views.DocumentViewSet)
 router.register(r'entities', views.EntityViewSet)

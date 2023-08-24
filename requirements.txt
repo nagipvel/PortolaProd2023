@@ -12,7 +12,6 @@ pyyaml==5.1
 boxsdk
 boxsdk[jwt]
 #drf-tracking==1.5.0
-git+https://github.com/drdreff/drf-tracking.git@master
 pytz==2019.1 # for drf-tracking
 openpyxl==3.0.7
 pvlib

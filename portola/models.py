@@ -307,7 +307,7 @@ class NotificationQueue(models.Model):
         return "{}".format(self.subject)
 
 class Project(models.Model):
-    document_approver = models.ForeignKey('auth.User', related_name='document_approver', blank=False, null=False, on_delete=models.CASCADE)
+    document_approver = models.ForeignKey('auth.User', limit_choices_to={'is_active': True}, related_name='document_approver', blank=False, null=False, on_delete=models.CASCADE)
     number = models.CharField(db_index=True, max_length=16, blank=False, null=False)
     status = models.CharField(db_index=True, choices=PROJECT_STATUS, default='ACTIVE', max_length=100)
     salesforce_id = models.CharField(max_length=10, blank=True, null=True)
@@ -322,7 +322,7 @@ class Project(models.Model):
         # related_name='primary_contact',
         on_delete=models.CASCADE, blank=False, null=False)
     # additional_contacts = multi
-    pvel_manager = models.ForeignKey('auth.User', related_name='pvel_manager', on_delete=models.CASCADE, blank=False, null=False)
+    pvel_manager = models.ForeignKey('auth.User', limit_choices_to={'is_staff': True}, related_name='pvel_manager', on_delete=models.CASCADE, blank=False, null=False)
     type = models.CharField(db_index=True, choices=PROJECT_CHOICES, default='MPQP', max_length=100)
     # documents = models.ManyToManyField('Documents',related_name='projects')
     followers = models.ManyToManyField('auth.User',related_name='projects_following')
